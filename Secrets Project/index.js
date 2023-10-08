@@ -1,4 +1,4 @@
-//The password is ILoveProgramming
+//The password is express
 import  express  from "express";
 import bodyParser from "body-parser";
 import {dirname} from "path";
@@ -16,7 +16,7 @@ app.get("/",(req,res)=>{
 });
 
 app.post("/check", (req,res)=>{
-    if(req.body["password"] == "ILoveProgramming")
+    if(req.body["password"] == "express")
     {
         res.sendFile(__dirname + "/public/secret.html");
     }
